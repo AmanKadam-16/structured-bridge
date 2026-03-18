@@ -126,7 +126,7 @@ export const PRESETS: PresetConfig[] = [
       {
         key: "severity",
         label: "Severity",
-        type: 'Literal["mild","moderate","severe","critical"]',
+        type: 'Literal',
         enabled: true,
         description: "Severity level",
       },
