@@ -15,7 +15,30 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Structured Bridge — Probabilistic AI × Deterministic Software",
   description:
-    "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Zod schemas.",
+    "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
+  openGraph: {
+    title: "The Structured Bridge",
+    description:
+      "Bridging Probabilistic AI and Deterministic Software through OpenAI Structured Outputs.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dwx05vz5l/image/upload/v1773866453/Demo_UI_a3mitn.png",
+        width: 1200,
+        height: 630,
+        alt: "The Structured Bridge — Demo UI",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Structured Bridge",
+    description:
+      "Bridging Probabilistic AI and Deterministic Software through OpenAI Structured Outputs.",
+    images: [
+      "https://res.cloudinary.com/dwx05vz5l/image/upload/v1773866453/Demo_UI_a3mitn.png",
+    ],
+  },
 };
 
 export default function RootLayout({
