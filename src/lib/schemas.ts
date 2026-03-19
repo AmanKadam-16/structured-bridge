@@ -156,8 +156,7 @@ response = client.chat.completions.create(
         {
             "role": "system",
             "content": """You are a helpful assistant.
-  Extract data into JSON but be conversational
-  and friendly in your response."""
+  Extract data into JSON Format."""
         },
         {
             "role": "user",

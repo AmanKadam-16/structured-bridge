@@ -375,7 +375,7 @@ export default function Home() {
                     className="font-bold text-sm"
                     style={{ fontFamily: "var(--font-mono)" }}
                   >
-                    THE ARTIST
+                    PROMPT BASED
                   </h3>
                   <p className="text-xs text-gray-500">LLM</p>
                 </div>
@@ -448,7 +448,7 @@ export default function Home() {
                     className="font-bold text-sm"
                     style={{ fontFamily: "var(--font-mono)" }}
                   >
-                    THE ACCOUNTANT
+                    SCHEMA BASED
                   </h3>
                   <p className="text-xs text-gray-500">Enterprise Software</p>
                 </div>
@@ -516,11 +516,10 @@ export default function Home() {
                 key={preset.id}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => selectPreset(preset)}
-                className={`brutal-btn-outline flex items-center gap-2 ${
-                  activePreset.id === preset.id
+                className={`brutal-btn-outline flex items-center gap-2 ${activePreset.id === preset.id
                     ? "!bg-black !text-white"
                     : ""
-                }`}
+                  }`}
               >
                 <span>{preset.icon}</span>
                 <span>{preset.label}</span>
@@ -612,7 +611,7 @@ export default function Home() {
                                 THE HOPE
                               </h3>
                               <p className="text-[11px] text-gray-500">
-                                Standard completion · temp 1.2
+                                Standard completion
                               </p>
                             </div>
                           </div>
@@ -744,14 +743,13 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
                     <div
-                      className={`brutal-card overflow-hidden ${
-                        isLoading && !results ? "marching-ants" : ""
-                      }`}
+                      className={`brutal-card overflow-hidden ${isLoading && !results ? "marching-ants" : ""
+                        }`}
                       style={
                         results?.enforcement.success
                           ? {
-                              animation: "pulseGlow 2s ease-in-out 3",
-                            }
+                            animation: "pulseGlow 2s ease-in-out 3",
+                          }
                           : undefined
                       }
                     >
@@ -917,21 +915,19 @@ export default function Home() {
           <div className="flex gap-0 mb-6">
             <button
               onClick={() => setCodeView("old")}
-              className={`px-6 py-3 text-sm font-mono font-bold border-2 border-black transition-all ${
-                codeView === "old"
+              className={`px-6 py-3 text-sm font-mono font-bold border-2 border-black transition-all ${codeView === "old"
                   ? "bg-black text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -translate-x-0"
                   : "bg-white/60 text-black hover:bg-gray-100"
-              }`}
+                }`}
             >
               ❌ The Old Way
             </button>
             <button
               onClick={() => setCodeView("new")}
-              className={`px-6 py-3 text-sm font-mono font-bold border-2 border-black border-l-0 transition-all ${
-                codeView === "new"
+              className={`px-6 py-3 text-sm font-mono font-bold border-2 border-black border-l-0 transition-all ${codeView === "new"
                   ? "bg-black text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
                   : "bg-white/60 text-black hover:bg-gray-100"
-              }`}
+                }`}
             >
               ✅ The New Way
             </button>
@@ -1054,9 +1050,8 @@ export default function Home() {
                     <motion.div
                       key={field.key}
                       layout
-                      className={`brutal-card p-4 cursor-pointer transition-all ${
-                        !field.enabled ? "opacity-50" : ""
-                      }`}
+                      className={`brutal-card p-4 cursor-pointer transition-all ${!field.enabled ? "opacity-50" : ""
+                        }`}
                       onClick={() => toggleField(field.key)}
                     >
                       <div className="flex items-center justify-between">
@@ -1086,16 +1081,14 @@ export default function Home() {
                             {field.type}
                           </span>
                           <div
-                            className={`w-10 h-6 border-2 border-black relative transition-colors ${
-                              field.enabled ? "bg-black" : "bg-gray-200"
-                            }`}
+                            className={`w-10 h-6 border-2 border-black relative transition-colors ${field.enabled ? "bg-black" : "bg-gray-200"
+                              }`}
                           >
                             <div
-                              className={`w-4 h-4 border border-black absolute top-[2px] transition-all ${
-                                field.enabled
+                              className={`w-4 h-4 border border-black absolute top-[2px] transition-all ${field.enabled
                                   ? "left-[18px] bg-white"
                                   : "left-[2px] bg-white"
-                              }`}
+                                }`}
                             />
                           </div>
                         </div>
