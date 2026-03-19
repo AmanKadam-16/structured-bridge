@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://structured-bridge.vercel.app/"),
   title: "The Structured Bridge — Probabilistic AI × Deterministic Software",
   description:
     "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
     siteName: "The Structured Bridge",
+    url: "https://structured-bridge.vercel.app/",
     type: "website",
     locale: "en_US",
     images: [
@@ -40,6 +42,9 @@ export const metadata: Metadata = {
     images: [
       "https://res.cloudinary.com/dwx05vz5l/image/upload/v1773866453/Demo_UI_a3mitn.png",
     ],
+  },
+  other: {
+    "og:logo": "https://res.cloudinary.com/dwx05vz5l/image/upload/v1773866453/Demo_UI_a3mitn.png",
   },
 };
 
