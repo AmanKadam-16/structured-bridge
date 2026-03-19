@@ -20,7 +20,9 @@ import {
   ArrowRight,
   Brain,
   Lock,
+  FileText,
 } from "lucide-react";
+import Link from "next/link";
 import {
   PRESETS,
   getOldWayCode,
@@ -307,17 +309,26 @@ export default function Home() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-5xl mx-auto"
         >
-          <div className="flex items-center gap-3 mb-4">
-            <div
-              className="w-3 h-3 bg-black"
-              style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
-            />
-            <span
-              className="text-xs tracking-[0.3em] uppercase"
-              style={{ fontFamily: "var(--font-mono)" }}
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <div
+                className="w-3 h-3 bg-black"
+                style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
+              />
+              <span
+                className="text-xs tracking-[0.3em] uppercase"
+                style={{ fontFamily: "var(--font-mono)" }}
+              >
+                Technical Demo
+              </span>
+            </div>
+            <Link
+              href="/resume"
+              className="brutal-btn-outline flex items-center gap-2"
             >
-              Technical Demo
-            </span>
+              <FileText className="w-3.5 h-3.5" strokeWidth={2.5} />
+              Resume Extractor
+            </Link>
           </div>
           <h1
             className="text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4"
