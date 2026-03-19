@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://structured-bridge.vercel.app/"),
-  title: "The Structured Bridge — Probabilistic AI × Deterministic Software",
+  title: "The Structured Bridge — Probabilistic AI × Deterministic AI",
   description:
     "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
   openGraph: {
-    title: "The Structured Bridge — Probabilistic AI × Deterministic Software",
+    title: "The Structured Bridge — Probabilistic AI × Deterministic AI",
     description:
       "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
     siteName: "The Structured Bridge",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Structured Bridge — Probabilistic AI × Deterministic Software",
+    title: "The Structured Bridge — Probabilistic AI × Deterministic AI",
     description:
       "A technical demonstration of bridging the gap between Probabilistic AI and Deterministic Software using OpenAI Structured Outputs with Pydantic schemas.",
     images: [
